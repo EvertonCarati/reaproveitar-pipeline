@@ -15,3 +15,6 @@ jobs:
 
       - name: Publicando a Release
         run: echo "Publicação da Release final"
+  CD:
+    needs: [CI]
+    uses: EvertonCarati/reaproveitar-pipeline/.github/workflows/cd.yaml@main
