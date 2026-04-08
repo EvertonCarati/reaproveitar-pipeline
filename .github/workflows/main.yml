@@ -18,3 +18,5 @@ jobs:
   CD:
     needs: [CI]
     uses: EvertonCarati/reaproveitar-pipeline/.github/workflows/cd.yml@main
+    with:
+      ambiente: producao
